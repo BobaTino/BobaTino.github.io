@@ -1,0 +1,112 @@
+body, html {
+    height: 100vw;
+}
+
+body {
+        background-color: #9DD1C4;
+        margin: 0;
+        font-family:"Inter";
+        display:grid;
+        grid-template-columns: 33% auto 33%;
+        grid-template-rows: 20% 10% 20% 10% 10% 10% auto ;
+        grid-template-areas:
+            "home section1 menu"
+            "contact section2 section3"
+            "email section4 section5"
+            "social section6 section7"
+            "section8 section9 section10"
+            "section11 section12 section13";
+}
+
+#home {
+    grid-area: home;
+    margin: 2rem
+}
+
+#menu {
+    grid-area: menu;
+    margin: 2rem;
+}
+
+#email {
+    grid-area: email;
+    margin-left: 2rem;
+    font-size: 3vw;
+}
+
+#social {
+    grid-area: social;
+    margin-left: 2rem;
+    font-size: 3vw;
+}
+
+#adress {
+    grid-area: section4;
+    font-size: 3vw
+}
+
+#instagram {
+    grid-area: section6;
+    font-size: 3vw;
+    transition: all 0.2s;
+}
+#instagram:hover {
+    transform: scale(1.1);
+}
+
+#handshake {
+    grid-area: section9;
+    font-size: 3vw;
+    transition: all 0.2s;
+}
+#handshake:hover {
+    transform: scale(1.1);
+}
+
+#tiktok {
+    grid-area: section12;
+    font-size: 3vw;
+    transition: all 0.2s;
+}
+#tiktok:hover {
+    transform: scale(1.1);
+}
+
+.link {
+    font-size: 3vw;
+    border:none;
+    background-color: #9DD1C4;
+}
+
+.contact {
+    grid-area: contact;
+    margin-left: 2rem;
+    margin-top: 1vw;
+    font-size: 4vw;
+    position: relative;
+}
+.contact::after {
+    content:'';
+    height: 0.3vw;
+    width: 30vw;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.logo {
+    height: 3vw;
+    width: 3vw;
+}
+
+.menu {
+    float: right;
+}
+
+button {
+    background-color: #6da394;
+    border-color: black;
+    border-radius: 20%;
+    border-width: 0.3vw;
+}
