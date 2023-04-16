@@ -1,0 +1,103 @@
+body, html {
+    height: 100vw;
+}
+
+body {
+        background-color: #9DD1C4;
+        margin: 0;
+        font-family:"Inter";
+        display:grid;
+        grid-template-columns: 15% 40% auto 10%;
+        grid-template-rows: 20% 5% 15% 15% auto;
+        grid-gap: 0.7vw;
+        grid-template-areas:
+            "home section1 section2 menu"
+            "section3 title section4 section5"
+            "section6 project image section7"
+            "section8 project2 image section9"
+            "section10 project3 image section11";
+}
+
+#title {
+    grid-area: title;
+    font-size: 4vw;
+}
+
+.regtangle {
+    grid-area: image;
+    width: 30vw;
+    height: 45vw;
+    background-color: #335c51;
+}
+
+#project1 {
+    grid-area: project;
+    font-size: 2.5vw;
+    margin-top: 5vw;
+}
+.sensorImage {
+    display: none;
+    border: solid black;
+    border-width: 20%;
+    width: 30vw;
+    height: 45vw;
+    background-image: url(../image/SensoryUnit.jpg);
+    grid-area: image;
+    background-size: cover;
+}
+.project1:hover + .sensorImage {
+    display:block;
+}
+
+#project2 {
+    grid-area: project2;
+    font-size: 2.5vw;
+}
+.bottleImage {
+    display: none;
+    border: solid black;
+    border-width: 20%;
+    width: 30vw;
+    height: 45vw;
+    background-image: url(../image/BottleOpener.jpg);
+    grid-area: image;
+    background-size: cover;
+}
+.project2:hover + .bottleImage {
+    display:block;
+}
+
+#project3 {
+    grid-area: project3;
+    font-size: 2.5vw;
+}
+
+#projectImage {
+    grid-area: image;
+}
+
+#menu {
+    grid-area: menu;
+    margin: 2rem;
+}
+
+#home {
+    grid-area: home;
+    margin: 2rem
+}
+
+button {
+    background-color: #6da394;
+    border-color: black;
+    border-radius: 20%;
+    border-width: 0.3vw;
+}
+
+.logo {
+    height: 3vw;
+    width: 3vw;
+}
+
+.menu {
+    float: right;
+}
